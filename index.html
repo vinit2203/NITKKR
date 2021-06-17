@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NIT KURUKSHETRA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+
+            color: #777;
+        }
+
+        h3,
+        h4 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 10px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        .container {
+            padding: 80px 120px;
+        }
+
+        .person {
+            border: 10px solid transparent;
+            margin-bottom: 25px;
+            width: 80%;
+            height: 80%;
+            opacity: 0.7;
+        }
+
+        .person:hover {
+            border-color: #f1f1f1;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            /* Set width to 100% */
+            margin: auto;
+        }
+
+        .carousel-caption h3 {
+            color: #fff !important;
+        }
+
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+                /* Hide the carousel text when the screen is less than 600 pixels wide */
+            }
+        }
+
+        .bg-1 {
+            background: #2d2d30;
+            color: #bdbdbd;
+        }
+
+        .bg-1 h3 {
+            color: #fff;
+        }
+
+        .bg-1 p {
+            font-style: italic;
+        }
+
+        .list-group-item:first-child {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        .list-group-item:last-child {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .thumbnail p {
+            margin-top: 15px;
+            color: #555;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #f1f1f1;
+            border-radius: 0;
+            transition: .2s;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            border: 1px solid #333;
+            background-color: #fff;
+            color: #000;
+        }
+
+
+        .navbar {
+
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 1;
+        }
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #d5d5d5 !important;
+        }
+
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: rgb(192, 247, 239) !important;
+        }
+
+        footer {
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            padding: 32px;
+        }
+
+        footer a {
+            color: #f5f5f5;
+        }
+
+        footer a:hover {
+            color: #777;
+            text-decoration: none;
+        }
+
+        .form-control {
+            border-radius: 0;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .idBrandNameSmall {
+            display: none;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .dropdown-menu li a {
+                color: #fff !important;
+            }
+
+            .idBrandName {
+                display: none;
+            }
+
+            .idBrandNameSmall {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="pics/logo.jfif" class="pull-left" style="width:56px;height:56px; display: inline-block;">
+
+                <a class="navbar-brand" href="#myPage"> <span style="margin-left:5px;" class="idBrandName">National
+                        Institute of Technology , Kurukshetra</span></a>
+                <a class="navbar-brand" href="#myPage"> <span style="margin-left:5px;" class="idBrandNameSmall">NIT,
+                        Kurukshetra</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Institute
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Institute profile</a></li>
+                            <li><a href="#">Honours & Awards</a></li>
+                            <li><a href="#">Sevice Rule</a></li>
+                            <li><a href="#">Rule & Policies</a></li>
+                            <li><a href="#">IPR Cell</a></li>
+                            <li> <a href="#">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Academic
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Programs</a></li>
+                            <li><a href="">Exam</a></li>
+                            <li><a href="">Roll sheets</a></li>
+                            <li><a href="">Fees & expenses</a></li>
+                            <li><a href="">R&D</a></li>
+                            <li><a href="">Academic Calender</a></li>
+                            <li><a href="">Exam Sheet</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">IIIT Sonepat</a></li>
+                            <li><a href="">Student Services</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administration
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Board of Governers</a></li>
+                            <li><a href="">Chairperson</a></li>
+                            <li><a href="">Director</a></li>
+                            <li><a href="">Registrar</a></li>
+                            <li><a href="">Senate</a></li>
+                            <li><a href="">Working Committe</a></li>
+                            <li><a href="">Deans</a></li>
+                            <li><a href="">Other officer</a></li>
+                            <li><a href="">NIT Act</a></li>
+                            <li><a href="">Organisation</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Department
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Account Section</a></li>
+                            <li><a href="">Workshop</a></li>
+                            <li><a href="">Estate Section</a></li>
+                            <li><a href="">health Center</a></li>
+                            <li><a href="">Library</a></li>
+                            <li><a href="">Store Section</a></li>
+                            <li><a href="">Sports Section</a></li>
+                            <li><a href="">GA Section</a></li>
+                            <li><a href="">TEQIP_III</a></li>
+                            <li><a href="">Internal Audit Section</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="background.jpg" alt="" width="1200" height="700">
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Container (The Band Section) -->
+    <div id="band" class="container text-center">
+        <h3>The Institute of Excellence</h3>
+        <p>
+            National Institute of Technology Kurukshetra (NITK) enjoys the reputation of being a centre of
+            excellence, facilitating quality technical and management education, research and training. It has been
+            confered the status of being an Institution of National Importance.</p><br>
+
+        <p> A Dataquest-IDC-NASSCOM survey placed the institute among the top twenty engineering institutions in the
+            country. The institute scored high on all the parameters such as Placement, Intellectual Capital,
+            Infrastructure, Industry Interface and Recruiter’s Perception.</p><br>
+
+        <p> Established in the year 1963, NITK has made rapid strides toward excellence. A sprawling lush green
+            campus, outstanding infrastructure, state-of-the-art support system, contemporary curriculum and a
+            dedicated faculty provide an enabling environment for quality teaching, learning and research.
+            The institute recognizes the significance of Institute-industry Interface and promotes interaction with
+            the industry through student placements, consultancy services, joint research projects and jointly
+            organizing workshops, seminars, conferences, etc. Further strengthening of this bond with the industry
+            is currently a matter of priority for the institute.</p><br>
+
+        <p> Presently, NITK offers undergraduate (B. Tech.) as well as post graduate (M. Tech.) programs in Civil,
+            Computer Science, Electrical, Electronics and Communication, Mechanical Engineering, Industrial
+            Engineering and Management, Information Technology and Master of Business Administration (MBA) –
+            Marketing, Finance, Human Resource Management, Information Technology along with programs in
+            Engineering, Technology, Applied Sciences, and Humanities & Social Sciences at doctorate level. The
+            institute also offers excellent facilities for advanced research in the emerging areas of science and
+            technology. The curriculum is constantly updated to meet the growing demand and needs of the country in
+            different areas of technology and management. The infrastructure is also geared up to enable the
+            institute develop technical personnel of high quality.</p><br>
+
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Dr. Satish Kumar</strong></p><br>
+                <a href="#demo" data-toggle="collapse">
+                    <img src="pics/director Sir.jpg" class="img-circle person" width="255" height="255">
+                </a>
+                <div id="demo" class="collapse">
+                    <p>Director</p>
+                    <p>National Institute of Technology,</p>
+                    <p>Kurukshetra</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Seema Kanyan</strong></p><br>
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="pics/prof2.jpg" class="img-circle person" width="255" height="255">
+                </a>
+                <div id="demo2" class="collapse">
+                    <p>Professor</p>
+                    <p>National Institute of Technology,</p>
+                    <p>Kurukshetra</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Mayank Dave</strong></p><br>
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="pics/hod1.jpg" class="img-circle person" width="255" height="255">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p>HOD</p>
+                    <p>National Institute of Technology,</p>
+                    <p>Kurukshetra</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+        <h3 class="text-center">Contact</h3>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p><span class="glyphicon glyphicon-map-marker"></span>Kurukshetra,Haryana,India</p>
+                <p><span class="glyphicon glyphicon-phone"></span>Phone: 01744-233208</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: registrar@nitkkr.ac.in</p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>Copyright &copy All Rights Reserved. NIT Kurukshetra | Designed and developed by Vinit Mahajan.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
